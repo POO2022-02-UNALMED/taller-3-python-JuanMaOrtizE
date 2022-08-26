@@ -1,4 +1,4 @@
-from operator import truediv
+
 
 
 class Marca:
@@ -146,4 +146,5 @@ class Control:
 
     def setTv(self,tv):
         self.tv=tv    
+
 
