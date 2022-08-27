@@ -1,4 +1,6 @@
 
+from control import Control
+from marca import Marca
 class TV:
     numTV=0
     def __init__(self,marca,estado):
@@ -83,3 +85,29 @@ class TV:
     def setNumTV(numTV):
 	    TV.numTV = numTV
 
+if __name__ == "__main__":
+
+    marca = Marca("Semsung")
+    tv1 = TV(marca, True)
+      
+    tv1.setCanal(100)
+    tv1.canalDown()
+      
+    tv2 = TV(marca, False)
+    control = Control()
+    control.enlazar(tv2)
+    control.setCanal(50)
+    control.turnOn()
+    control.canalUp()
+      
+    tv3 = TV(marca, False)
+    tv2.setCanal(121)
+    print(tv1.getCanal())
+    print(tv2.getCanal())
+    print(tv3.getCanal())
+      
+    ok = False
+      
+    if(tv1.getCanal() == 99 and tv2.getCanal() == 2 and tv3.getCanal() == 1):
+        print("hey")
+      
