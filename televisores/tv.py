@@ -1,3 +1,7 @@
+
+from control import Control
+from marca import Marca
+
 class TV:
     numTV=0
     def __init__(self,marca,estado):
@@ -20,12 +24,12 @@ class TV:
     def canalUp(self):
         if self.estado==True:
             if self.canal>=1 and self.canal<120:
-                canal+=1
+                self.canal+=1
 
     def canalDown(self):
         if self.estado==True:
             if self.canal>1 and self.canal<=120:
-                canal-=1
+                self.canal-=1
 
     def volumenUp(self):
         if self.estado==True:
@@ -76,8 +80,9 @@ class TV:
         if canal>=1 and canal<=120 and self.estado==True:
             self.canal=canal 
 
-    def getNumTV(self):
-        return self.numTV
+    def getNumTV():
+        return TV.numTV
 	
-    def setNumTV(self, numTV):
+    def setNumTV(numTV):
 	    TV.numTV = numTV
+

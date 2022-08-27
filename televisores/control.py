@@ -20,12 +20,12 @@ class Control:
     def canalUp(self):
         if self.estado==True:
             if self.canal>=1 and self.canal<120:
-                canal+=1
+                self.canal+=1
 
     def canalDown(self):
         if self.estado==True:
             if self.canal>1 and self.canal<=120:
-                canal-=1
+                self.canal-=1
 
     def volumenUp(self):
         if self.estado==True:
