@@ -7,7 +7,7 @@ class TV:
         self.volumen=1
         self.precio=500
         self.estado=estado
-        self.control()
+        self.control=None
         TV.numTV+=1
 
     def turnOff(self):

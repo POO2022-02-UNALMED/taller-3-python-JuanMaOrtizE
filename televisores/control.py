@@ -3,7 +3,7 @@ class Control:
 
     def enlazar(self,tv):    
         self.tv=tv 
-        tv.control(self)
+        tv.control=self
 
 
 
