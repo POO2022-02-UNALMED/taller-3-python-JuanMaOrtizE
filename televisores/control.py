@@ -29,12 +29,12 @@ class Control:
     def volumenUp(self):
         if self.tv.estado==True:
             if self.tv.volumen>=0 and self.tv.volumen<7:
-                self.volumen+=1
+                self.tv.volumen+=1
 
     def volumenDown(self):
         if self.tv.estado==True:
             if self.tv.volumen>0 and self.tv.volumen<=7:
-                self.volumen-=1
+                self.tv.volumen-=1
 
     def setCanal(self,canal):
 
