@@ -1,7 +1,4 @@
 
-from control import Control
-from marca import Marca
-
 class TV:
     numTV=0
     def __init__(self,marca,estado):
